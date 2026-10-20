@@ -89,7 +89,7 @@ with tab2:
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        st.image(frame_rgb, caption=f"Frame {t} — colored boxes are tracker output, white are ground truth", use_container_width=False)
+        st.image(frame_rgb, caption=f"Frame {t} — colored boxes are tracker output, white are ground truth")
 
 with tab3:
     st.subheader("Detection & tracking accuracy, scored against ground truth")
